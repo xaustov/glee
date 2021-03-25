@@ -305,7 +305,44 @@ footer {
       text-align: left;
     }
   }
-  
+  .support {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 49px;
+      height: 49px;
+      top: 37px;
+      left: 145px;
+      background-image: url("../images/top-slider/24.svg");
+    }
+  }
+  .delivery {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 49px;
+      height: 49px;
+      top: 37px;
+      left: 160px;
+      background-image: url("../images/top-slider/car.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  .security {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 49px;
+      height: 49px;
+      top: 37px;
+      left: 160px;
+      background-image: url("../images/top-slider/card.svg");
+      background-repeat: no-repeat;
+    }
+  }
   
 
   
