@@ -2,7 +2,11 @@ $(function(){
   $('.top-slider__inner').slick({
     dots: true,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000
  });
+ 
+  var mixer = mixitup('.design-gallery');
+  
+
 });
