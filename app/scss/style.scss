@@ -550,6 +550,22 @@ footer {
 }
 
 
+.video {
+  &__inner {
+    height: 500px;
+    width: 100%;
+    background-image: url('../images/video/video-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+  }
+}
+
+
 
 
   

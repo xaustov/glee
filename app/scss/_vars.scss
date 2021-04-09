@@ -24,3 +24,14 @@
   font-style: normal;
 }
 $grey: #7b7b7b;
+
+
+
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+ @function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
