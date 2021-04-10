@@ -566,6 +566,125 @@ footer {
 }
 
 
+.articles {
+  padding-bottom: 90px;
+  background-image: url("../images/articles/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 105%;
+  &__top-title {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  &__title {
+    @extend %DMSans-700;
+    font-size: 36px;
+    color: #1a1a1a;
+  }
+  &__top-link {
+    cursor: pointer;
+  }
+  &__text {
+    @extend %DMSans-700;
+    font-size: 16px;
+    color: #262626;
+    margin-right: 25px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 12px;
+      background-image: url('../images/articles/shape-icon.png');
+      top: 5px;
+      right: -25px;
+    }
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 90px;
+  }
+  &__item {
+    min-height: 420px;
+    padding-left: 30px;
+    padding-top: 230px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  &__item-link {
+    display: inline-block;
+    @extend %Poppins-700;
+    color: #fff;
+    background-color: #a3bbc8;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    margin-bottom: 23px;
+  }
+  &__item-text {
+    height: 70px;
+    max-width: 284px;
+    @extend %DMSans-500;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  &__date {
+    display: flex;
+    @extend %Rubik-400;
+    font-size: 12px;
+    line-height: 30px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      width: 315px;
+      height: 1px;
+      background-color: #e0e0e0;
+    }
+  }
+  &__time {
+    margin-left: 16px;
+    margin-right: 43px;
+    display: inline-block;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 13px;
+      background-image: url("../images/articles/user.png");
+      left: -16px;
+      top: 8px;
+    }
+  }
+  &__admin {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 13px;
+      background-image: url("../images/articles/user.png");
+      left: -16px;
+      top: 8px;
+    }
+  }
+}
+.partners__inner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
 
 
   
