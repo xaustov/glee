@@ -31,6 +31,14 @@
   url('../fonts/Poppins-Bold.woff2') format('woff2');
 }
 @font-face {
+  font-family: 'Rubik-Light';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: local('Rubik-Light.woff2'),
+  url('../fonts/Rubik-Light.woff2') format('woff2');
+}
+@font-face {
   font-family: 'Rubik-Regular';
   font-weight: 400;
   font-style: normal;

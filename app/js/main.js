@@ -6,7 +6,27 @@ $(function(){
     autoplaySpeed: 2000
  });
  
-  var mixer = mixitup('.design-gallery');
+  
+  
+  const mixin1 = document.querySelector(".design-gallery");
+  const mixin2 = document.querySelector(".products-items");
+  
+  if (mixin1) {
+    mixitup('.design-gallery', {
+      selectors: {
+        control: '.filter2'
+      }
+    })
+  }
+
+  if (mixin1) {
+    mixitup('.products-items', {
+      selectors: {
+        control: '.filter1'
+      }
+    })
+  }
+
   
 
 });
