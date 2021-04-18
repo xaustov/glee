@@ -833,7 +833,35 @@ footer {
   align-items: center;
 }
 
-
+.terms {
+  padding: 110px 0 40px;
+  &__title {
+    margin-bottom: 25px;
+    @extend %Rubik-400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #243f4d;
+  }
+  &__list {
+    margin-bottom: 45px;
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+    margin-left: 30px;
+    list-style-type: decimal-leading-zero;
+  }
+  &__item {
+    margin-bottom: 30px;
+  }
+  &__text {
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #243f4d;
+    margin-bottom: 70px;
+  }
+}
   
 
 
