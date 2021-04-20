@@ -865,14 +865,246 @@ footer {
   
 
 
-  
+.mission {
+  padding: 120px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bg {
+    margin-right: 50px;
+    object-fit: cover;
+  }
+  &__content {
+    max-width: 545px;
+    padding: 80px 0;
+  }
+  &__content-inner {
+    display: flex;
+    max-width: 265px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  &__number {
+    margin-right: 30px;
+  }
+  &__text {
+    @extend %Rubik-400;
+    font-size: 16px;
+    color: $text;
+    align-self: flex-end;
+  }
+  &__text-info {
+    display: block;
+    padding-top: 15px;
+  }
+  &__title {
+    margin-bottom: 50px;
+    @extend %DMSans-700;
+    font-size: 36px;
+    color: #243f4d;
+  }
+  &__desc {
+    max-width: 553px;
+    width: 100%;
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $text;
+    margin-bottom: 100px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 2px;
+      background-color: #e6eaf0;
+      left: 0;
+      bottom: -65px;
+    }
+  }
+  &__decor-list {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5px;
+  }
+  &__decor-item {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -55px;
+      top: 10px;
+      width: 37px;
+      height: 37px;
+      background-image: url("../images/about/page.svg");
+    }
+  }
+  &__decor-item--first {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      right: -20px;
+      width: 1px;
+      height: 80px;
+      background-color: #e6eaf0;
+    }
+  }
+  &__decor-item--second {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      right: -20px;
+      width: 1px;
+      height: 80px;
+      background-color: #e6eaf0;
+    }
+    &::before {
+      background-image: url("../images/about/speaker.svg");
+    }
+  }
+  &__decor-item--third {
+    &::before {
+      background-image: url("../images/about/medal.svg");
+    }
+  }
+  &__decor-numbers {
+    display: block;
+    @extend %DMSans-700;
+    font-size: 36px;
+    line-height: 38px;
+    color: #243f4d;
+  }
+  &__decor-text {
+    @extend %DMSans-700;
+    font-size: 16px;
+    line-height: 17px;
+    color: #4c4c4c;
+  }
+}
 
 
-
+.widgets {
+  background-color: #fcd7b6;
+  padding: 80px 0;
+  height: 320px;
+  margin-bottom: 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__item {
+    text-align: center;
+    max-width: 200px;
+  }
+  &__img {
+    padding-bottom: 25px;
+    margin: 0 auto;
+  }
+  &__img--second {
+    margin-bottom: 10px;
+  }
+  &__numbers {
+    display: block;
+    @extend %DMSans-700;
+    font-size: 36px;
+    line-height: 38px;
+    color: #243f4d;
+  }
+  &__text {
+    @extend %DMSans-700;
+    font-size: 18px;
+    line-height: 38px;
+    color: #243f4d;
+    text-align: left;
+  }
+}
 
 
  
-
+.team {
+  padding-bottom: 120px;
+  &__inner {
+    display: flex;
+  }
+  &__info {
+    max-width: 300px;
+    margin-right: 100px;
+  }
+  &__title {
+    @extend %DMSans-700;
+    font-size: 36px;
+    line-height: 32px;
+    color: #243f4d;
+    padding-bottom: 35px;
+  }
+  &__text {
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $text;
+    width: 310px;
+    padding-bottom: 35px;
+  }
+  &__link {
+    background-color: #a3bbc8;
+    padding: 17px 25px 17px 15px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+  }
+  &__link-text {
+    margin-right: 20px;
+    @extend %Poppins-700;
+    color: #fff;
+  }
+  &__foto {
+    min-height: 740px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+  }
+  &__foto-box {
+    display: flex;
+    max-width: 325px;
+    padding: 25px 20px;
+    background-color: #fff;
+    position: relative;
+    bottom: 55px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+  }
+  &__foto-name {
+    padding-right: 55px;
+  }
+  &__foto-title {
+    display: block;
+    min-width: 145px;
+    margin-bottom: 10px;
+    @extend %DMSans-700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #436372;
+  }
+  &__foto-desc {
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #78798e;
+  }
+  &__foto-links {
+    display: flex;
+    align-items: center;
+  }
+  &__foto-link {
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
 
 
 
