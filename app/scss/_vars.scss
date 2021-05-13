@@ -36,6 +36,14 @@
 $grey: #7b7b7b;
 $text: #415965;
 
+%checkbox-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+
 
 
 
