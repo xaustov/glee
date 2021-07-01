@@ -1,0 +1,66 @@
+  .service {
+    &__inner {
+      background-color: #fef7f0;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item:first-child {
+      padding: 25px 145px 25px 220px;
+    }
+    &__item + .service__item {
+      padding: 25px 155px 25px 240px;
+      border-left: 1px solid #e8e4df;
+    }
+    &__title {
+      @extend %DMSans-700;
+      font-size: 18px;
+      line-height: 40px;
+      color: #414141;
+    }
+    &__text {
+      @extend %DMSans-400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #585858;
+      min-width: 220px;
+      text-align: left;
+    }
+  }
+  .support {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 49px;
+      height: 49px;
+      top: 37px;
+      left: 145px;
+      background-image: url("../images/top-slider/24.svg");
+    }
+  }
+  .delivery {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 49px;
+      height: 49px;
+      top: 37px;
+      left: 160px;
+      background-image: url("../images/top-slider/car.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  .security {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 49px;
+      height: 49px;
+      top: 37px;
+      left: 160px;
+      background-image: url("../images/top-slider/card.svg");
+      background-repeat: no-repeat;
+    }
+  }

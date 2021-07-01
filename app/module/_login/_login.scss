@@ -1,0 +1,109 @@
+.modal {
+  padding: 120px 0;
+  &__form {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+  &__label {
+    display: block;
+    @extend %Rubik-400;
+    color: #436372;
+  }
+  &__input {
+    display: block;
+    height: 55px;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border: 2px solid #f6f6f6;
+  }
+  &__login-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 16px 0;
+    border: none;
+    background-color: #a3bbc8;
+    color: #fffefe;
+    @extend %Rubik-500;
+    font-size: 18px;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  &__checkbox {
+    @extend %Rubik-400;
+    color: #436372;
+    margin-bottom: 60px;
+  }
+  &__checkbox-input {
+    margin: 0;
+    display: none;
+  }
+  &__fake {
+    display: inline-block;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    background-color: #ebebeb;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: -3px;
+      left: 50%;
+      background-image: url("../images/icons/check.svg");
+      opacity: 0;
+      transform: translate(-50%, 50%);
+    }
+  }
+  .modal__checkbox-input:checked + .modal__fake::before {
+    opacity: 1;
+  }
+  &__checkbox-link {
+    display: inline-block;
+    margin-left: 187px;
+    @extend %Rubik-400;
+    color: #436372;
+  }
+  &__error {
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+    @extend %Rubik-400;
+    color: #436372;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -30px;
+      width: 470px;
+      height: 2px;
+      background-color: #f6f6f6;
+    }
+  }
+  &__login-create {
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    background-color: transparent;
+    border: 2px solid #a3bbc8;
+    @extend %Rubik-500;
+    font-size: 18px;
+    color: #243f4d;
+    cursor: pointer;
+  }
+}
+.partners__login {
+  background-color: #fef7f0;
+}
+.partners__inner-login {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1040px;
+  height: 250px;
+  justify-content: space-between;
+  align-items: center;
+}

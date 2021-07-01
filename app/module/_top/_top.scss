@@ -1,0 +1,38 @@
+.top {
+  background-color: #edf1f4;
+  padding: 35px 0;
+  text-align: center;
+  &__title {
+    margin-bottom: 10px;
+    @extend %Rubik-300;
+    font-size: 36px;
+    line-height: 24px;
+    color: #222933;
+  }
+}
+.breadcrumbs {
+  &__list {
+    display: inline-flex;
+  }
+  &__item {
+    padding-right: 20px;
+    @extend %Rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #94999f;
+    position: relative;
+    &::after {
+      content: "/";
+      position: absolute;
+      right: 5px;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &__link {
+    color: #94999f;
+  }
+}

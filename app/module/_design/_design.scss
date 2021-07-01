@@ -1,0 +1,59 @@
+.design {
+  padding-top: 105px;
+  padding-bottom: 120px;
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  &__item-btn + .design__item-btn {
+    margin-left: 30px;
+  }
+  &__item-btn {
+    border: none;
+    background-color: transparent;
+    color: #8b8b8b;
+    @extend %DMSans-700;
+    font-size: 16px;
+    cursor: pointer;
+    &:active {
+      outline: transparent;
+    }
+  }
+}
+.design-gallery {
+  display: grid;
+  min-height: 530px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 35px;
+  &__item {
+    padding-top: 40px;
+    padding-left: 35px;
+    position: relative;
+  }
+  &__title {
+    @extend %DMSans-700;
+    font-size: 20px;
+    color: #1a1a1a;
+    max-width: 175px;
+    margin-bottom: 15px;
+  }
+  &__subtitle {
+    @extend %DMSans-700;
+    font-size: 16px;
+    color: #a3bbc8;
+  }
+  &__link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+.mixitup-control-active {
+  color: #1a1a1a;
+  outline: transparent;
+}
