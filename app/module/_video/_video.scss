@@ -12,3 +12,11 @@
     margin-bottom: 120px;
   }
 }
+
+@media (max-width: 1770px) {
+  .video {
+    &__inner {
+      background-position: center center;
+    }
+  }
+}

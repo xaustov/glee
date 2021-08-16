@@ -10,7 +10,6 @@ body {
   flex-grow: 1;
 }
 .container-main {
-  width: 100%;
   max-width: 1800px;
   padding: 0 15px;
   margin: 0 auto;
@@ -27,6 +26,9 @@ body {
   color: #1a1a1a;
   text-align: center;
   margin-bottom: 40px;
+  @media (max-width: 550px) {
+    font-size: 22px;
+  }
 }
 
 

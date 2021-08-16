@@ -57,3 +57,47 @@
   color: #1a1a1a;
   outline: transparent;
 }
+
+@media (max-width: 1230px) {
+  .design__buttons {
+    flex-wrap: wrap;
+  }
+  .design-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    &__item {
+      background-repeat: no-repeat;
+      padding-bottom: 100px;
+      min-width: 370px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .design-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__item {
+      padding: 0 0 200px 10px;
+      background-position: top bottom;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .design-gallery {
+    &__item {
+      min-width: 320px;
+      background-position: left top;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .design-gallery {
+    &__item {
+      min-width: 290px;
+    }
+  }
+}

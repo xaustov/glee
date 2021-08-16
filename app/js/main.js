@@ -1,7 +1,8 @@
 $(function(){
 
   $('.menu__btn').on('click', function (){
-    $('.menu__list').toggleClass('menu__list--active')
+    $('.menu__list').toggleClass('menu__list--active');
+    $('.top-slider').css("margin-top", "280px");
   });
   
 
@@ -127,7 +128,7 @@ $(function(){
       selectors: {
         control: '.filter2'
       }
-    })
+    });
   }
 
   if (mixin1) {
@@ -135,7 +136,7 @@ $(function(){
       selectors: {
         control: '.filter1'
       }
-    })
+    });
   }
 
   
